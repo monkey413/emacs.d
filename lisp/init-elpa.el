@@ -104,6 +104,7 @@
     gitconfig-mode
     textile-mode
     w3m
+    web-mode
     workgroups2
     zoutline
     company-c-headers

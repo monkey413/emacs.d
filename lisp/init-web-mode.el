@@ -48,4 +48,5 @@ b\\)\\'")
              ;; angular imenu
              (" \\(ng-[a-z]*\\)=\"\\([^\"]+\\)" 1 2 "=")))))
 
+(setq web-mode-script-padding 0)
 (provide 'init-web-mode)
