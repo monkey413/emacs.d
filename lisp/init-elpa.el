@@ -108,7 +108,8 @@
     workgroups2
     zoutline
     company-c-headers
-    company-statistics)
+    company-statistics
+    clang-format)
   "Packages to install from melpa-unstable.")
 
 (defvar melpa-stable-banned-packages nil
@@ -349,6 +350,10 @@ PACKAGE is a symbol, VERSION is a vector as produced by `version-to-list', and
 (require-package 'typescript-mode)
 (require-package 'projectile)
 (require-package 'projectile-ripgrep)
+(require-package 'clang-format)
+(require-package 'ggtags)
+(require-package 'xcscope)
+(require-package 'ace-jump-mode)
 
 ;; {{ Fixed expiring GNU ELPA keys
 ;; GNU ELPA GPG key will expire on Sep-2019. So we need install this package to
