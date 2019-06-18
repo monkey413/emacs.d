@@ -78,6 +78,19 @@
   (hs-minor-mode)
   (hide-ifdef-mode))
 
+(defun toggle-hiding (column)
+  (interactive "P")
+  (if hs-minor-mode
+      (if (condition-case nil
+              (hs-toggle-hiding)
+            (error t))
+          (hs-show-all))
+    (toggle-selective-display column)))
+
+(global-set-key (kbd "<f10>") 'toggle-hiding)
+(global-set-key (kbd "<f9>") 'hide-ifdef-block)
+(global-set-key (kbd "<f8>") 'show-ifdef-block)
+
 ;; donot use c-mode-common-hook or cc-mode-hook because many major-modes use this hook
 (defun c-mode-common-hook-setup ()
   (c-mode-hook-function)
