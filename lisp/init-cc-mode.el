@@ -71,8 +71,16 @@
   ;; make a #define be left-aligned
   (setq c-electric-pound-behavior (quote (alignleft))))
 
+(defun c-mode-hook-function ()
+  (cscope-minor-mode)
+  (cscope-setup)
+  (ggtags-mode)
+  (hs-minor-mode)
+  (hide-ifdef-mode))
+
 ;; donot use c-mode-common-hook or cc-mode-hook because many major-modes use this hook
 (defun c-mode-common-hook-setup ()
+  (c-mode-hook-function)
   (unless (is-buffer-file-temp)
     (my-common-cc-mode-setup)
     (unless (or (derived-mode-p 'java-mode) (derived-mode-p 'groovy-mode))
