@@ -230,7 +230,7 @@
     ;; eldoc, show API doc in minibuffer echo area
     ;; (turn-on-eldoc-mode)
     ;; show trailing spaces in a programming mod
-    (setq show-trailing-whitespace t)))
+    (setq show-trailing-whitespace nil)))
 
 (add-hook 'prog-mode-hook 'generic-prog-mode-hook-setup)
 ;; some major-modes NOT inherited from prog-mode
