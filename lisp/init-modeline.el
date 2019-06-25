@@ -47,6 +47,10 @@
     ;;global-mode-string, org-timer-set-timer in org-mode need this
     (propertize "%M" 'face nil)
 
+    '((which-function-mode
+       (which-func-mode
+        (#1=" " which-func-format " "))))
+
     " --"
     ;; i don't want to see minor-modes; but if you want, uncomment this:
     ;; minor-mode-alist  ;; list of minor modes
