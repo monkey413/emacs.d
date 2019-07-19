@@ -1,0 +1,3 @@
+[submodule "site-lisp/doxygen"]
+	path = site-lisp/doxygen
+	url = https://github.com/monkey413/doxygen
