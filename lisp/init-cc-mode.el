@@ -76,7 +76,8 @@
   (cscope-setup)
   (ggtags-mode)
   (hs-minor-mode)
-  (hide-ifdef-mode))
+  (hide-ifdef-mode)
+  (c-set-offset 'case-label '+))
 
 (defun toggle-hiding (column)
   (interactive "P")
