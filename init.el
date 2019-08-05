@@ -142,6 +142,7 @@
   (require-init 'init-writting)
   (require-init 'init-acejump)
   (require-init 'init-smerge)
+  (setf completion-ignore-case t)
 
   ;; @see https://github.com/hlissner/doom-emacs/wiki/FAQ
   ;; Adding directories under "site-lisp/" to `load-path' slows
