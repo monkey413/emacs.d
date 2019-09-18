@@ -692,6 +692,7 @@ If the character before and after CH is space or tab, CH is NOT slash"
  "gv" 'git-gutter:set-start-revision
  "gh" 'git-gutter-reset-to-head-parent
  "gr" 'git-gutter-reset-to-default
+ "pm" 'projectile-command-map
  "ps" 'profiler-start
  "pr" 'profiler-report
  "ud" 'my-gud-gdb
